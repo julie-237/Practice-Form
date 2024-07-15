@@ -12,6 +12,7 @@
 <body>
     <form action="" method="get">
     <header>contact us</header>
+
     <main>
         <section>
             <h1>How can we help you?</h1>
@@ -21,7 +22,7 @@
             <input type="text" id="user-name" name="username">
             </li>
             <li>
-              <label for="user-email"></label>
+              <label for="user-email">Your E-Mail Address </label>
             <input type="text" id="user-email" name="useremail">   
             </li>
             <li>
@@ -30,7 +31,51 @@
             </li>
         </ul>
         </section>
-    </form>
+
+        <section>
+            <label for="express-yourself">Your Message</label>
+            <textarea name="message" id="express-yourself" required rows="6"></textarea>
+        </section>
+
+        <section>
+              <label for="how-did-you-find-us">How did you find us?</label>
+            <select name="How did you find us?" id="how-did-you-find-us">
+                <option value="Web Search">Web Search</option>
+                <option value="Word of Mouth">Word of Mouth</option>
+                <option value="Other">Other</option>
+            </select>
+        </section>
+
+        <section>
+            <h2>How should we reply?</h2>
+            <ul>
+            <li>
+             <label for="call-me">Call me</label>
+            <input type="radio" id="call-me" name="reply" value="Phone" required>   
+            </li>
+            <li>
+              <label for="send-me-an-email">send me an email</label>
+            <input type="radio" id="send-me-an-email" name="reply" value="Mail" required>  
+            </li>
+            <li>
+               <label for="don't-reply">don't reply</label>
+            <input type="radio" id="don't-reply" name="reply" value="Nothing" required>  
+            </li>
+           </ul>
+
+        </section>
+
+        <section>
+            <label for="agree">Accept Terms</label>
+            <input type="checkbox" id="agree" name="Terms">
+        </section>
     </main>
+    <footer>
+        <section>
+            <button type="reset">clear</button>
+            <button type="submit">Submit</button>
+        </section>
+    </footer>
+</form>
 </body>
 </html>
