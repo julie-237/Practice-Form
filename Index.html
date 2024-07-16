@@ -10,24 +10,25 @@
     <title>Practice-Form</title>
 </head>
 <body>
-    <form action="" method="get">
     <header>contact us</header>
+    <form action="" method="get">
+    
 
     <main>
+        <h1>How can we help you?</h1>
         <section>
-            <h1>How can we help you?</h1>
          <ul>
             <li>
-                <label for="user-name">your name</label>
-            <input type="text" id="user-name" name="username">
+                <label for="user-name">Your name</label>
+            <input type="text" id="user-name" name="username" required>
             </li>
             <li>
               <label for="user-email">Your E-Mail Address </label>
-            <input type="text" id="user-email" name="useremail">   
+            <input type="email" id="user-email" name="useremail">   
             </li>
             <li>
              <label for="user-phonenumber">Your Phone Number</label>
-            <input type="text" id="user-phonenumber" name="userphonenumber">  
+            <input type="tel" id="user-phonenumber" name="userphonenumber">  
             </li>
         </ul>
         </section>
@@ -46,34 +47,38 @@
             </select>
         </section>
 
-        <section>
-            <h2>How should we reply?</h2>
+        <h1>How should we reply?</h1>
+        <section class="tick-mode">
             <ul>
             <li>
+             <input type="radio" id="call-me" name="reply" value="Phone" required> 
              <label for="call-me">Call me</label>
-            <input type="radio" id="call-me" name="reply" value="Phone" required>   
+              
             </li>
             <li>
+              <input type="radio" id="send-me-an-email" name="reply" value="Mail" required> 
               <label for="send-me-an-email">send me an email</label>
-            <input type="radio" id="send-me-an-email" name="reply" value="Mail" required>  
+             
             </li>
             <li>
+               <input type="radio" id="don't-reply" name="reply" value="Nothing" required>
                <label for="don't-reply">don't reply</label>
-            <input type="radio" id="don't-reply" name="reply" value="Nothing" required>  
+              
             </li>
            </ul>
 
         </section>
 
-        <section>
-            <label for="agree">Accept Terms</label>
+        <section class="tick-mode">
             <input type="checkbox" id="agree" name="Terms">
+            <label for="agree">Accept Terms</label>
+            
         </section>
     </main>
     <footer>
         <section>
-            <button type="reset">clear</button>
-            <button type="submit">Submit</button>
+            <button type="reset" class="cls">clear</button>
+            <button type="submit" class="mit">Submit</button>
         </section>
     </footer>
 </form>

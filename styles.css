@@ -1,0 +1,62 @@
+body {
+background-color: rgb(206, 238, 250);
+font-family: Bodoni Moda SC;
+}
+
+header {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
+h1 {
+    font-size: 1rem;
+}
+ul {
+    list-style: none;
+    padding: 0;
+}
+label {
+    margin: 5px 0;
+}
+
+form {
+    width: 25rem;
+    margin: auto;
+    background-color:rgb(229, 246, 254) ;
+    padding: 1rem;
+    border-radius: 6px;
+    box-sizing:border-box ;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+}
+input, textarea, select {
+    width: 100%;
+}
+
+input:focus, textarea:focus, select:focus {
+    background-color: cornflowerblue;
+    color: darkslateblue;
+}
+.tick-mode {
+    
+   display: flexbox;
+    align-items: center; 
+}
+.tick-mode input {
+    
+    width: auto;
+    margin-right: 0.5rem;
+}
+footer {
+text-align: right;
+}
+.mit {
+background-color: rgb(24, 24, 103);
+color: white;
+}
+.mit :hover {
+    background-color: rgb(18, 18, 19);
+}
+
+.cls :hover {
+    background-color: rgb(102, 101, 101);{}
+}
