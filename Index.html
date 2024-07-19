@@ -1,86 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap" rel="stylesheet">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda+SC:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap"
+      rel="stylesheet"
+    />
     <title>Practice-Form</title>
-</head>
-<body>
+  </head>
+  <body>
     <header>contact us</header>
-    <form action="" method="get">
-    
-
-    <main>
+    <form action="/Practice-Form" method="get">
+      <main>
         <h1>How can we help you?</h1>
         <section>
-         <ul>
+          <ul>
             <li>
-                <label for="user-name">Your name</label>
-            <input type="text" id="user-name" name="username" required>
+              <label for="user-name">Your name</label>
+              <input type="text" id="user-name" name="username" required />
             </li>
             <li>
               <label for="user-email">Your E-Mail Address </label>
-            <input type="email" id="user-email" name="useremail">   
+              <input type="email" id="user-email" name="useremail" required />
             </li>
             <li>
-             <label for="user-phonenumber">Your Phone Number</label>
-            <input type="tel" id="user-phonenumber" name="userphonenumber">  
+              <label for="user-phonenumber">Your Phone Number</label>
+              <input
+                type="tel"
+                id="user-phonenumber"
+                name="userphonenumber"
+                required
+                minlength="5"
+              />
             </li>
-        </ul>
+          </ul>
         </section>
 
         <section>
-            <label for="express-yourself">Your Message</label>
-            <textarea name="message" id="express-yourself" required rows="6"></textarea>
+          <label for="express-yourself">Your Message</label>
+          <textarea
+            name="message"
+            id="express-yourself"
+            required
+            minlength="10"
+            maxlength="200"
+            rows="6"
+          ></textarea>
         </section>
 
         <section>
-              <label for="how-did-you-find-us">How did you find us?</label>
-            <select name="How did you find us?" id="how-did-you-find-us">
-                <option value="Web Search">Web Search</option>
-                <option value="Word of Mouth">Word of Mouth</option>
-                <option value="Other">Other</option>
-            </select>
+          <label for="how-did-you-find-us">How did you find us?</label>
+          <select name="How did you find us?" id="how-did-you-find-us">
+            <option value="Web Search">Web Search</option>
+            <option value="Word of Mouth">Word of Mouth</option>
+            <option value="Other">Other</option>
+          </select>
         </section>
 
         <h1>How should we reply?</h1>
-        <section class="tick-mode">
-            <ul>
-            <li>
-             <input type="radio" id="call-me" name="reply" value="Phone" required> 
-             <label for="call-me">Call me</label>
-              
-            </li>
-            <li>
-              <input type="radio" id="send-me-an-email" name="reply" value="Mail" required> 
-              <label for="send-me-an-email">send me an email</label>
-             
-            </li>
-            <li>
-               <input type="radio" id="don't-reply" name="reply" value="Nothing" required>
-               <label for="don't-reply">don't reply</label>
-              
-            </li>
-           </ul>
-
-        </section>
-
-        <section class="tick-mode">
-            <input type="checkbox" id="agree" name="Terms">
-            <label for="agree">Accept Terms</label>
-            
-        </section>
-    </main>
-    <footer>
         <section>
-            <button type="reset" class="cls">clear</button>
-            <button type="submit" class="mit">Submit</button>
+          <ul>
+            <li class="tick-mode">
+              <input
+                type="radio"
+                id="call-me"
+                name="reply"
+                value="Phone"
+                required
+              />
+              <label for="call-me">Call me</label>
+            </li>
+            <li class="tick-mode">
+              <input
+                type="radio"
+                id="send-me-an-email"
+                name="reply"
+                value="Mail"
+                required
+              />
+              <label for="send-me-an-email">send me an email</label>
+            </li>
+            <li class="tick-mode">
+              <input
+                type="radio"
+                id="don't-reply"
+                name="reply"
+                value="Nothing"
+                required
+              />
+              <label for="don't-reply">don't reply</label>
+            </li>
+          </ul>
         </section>
-    </footer>
-</form>
-</body>
+
+        <section class="tick-mode">
+          <input type="checkbox" id="agree" name="Terms" />
+          <label for="agree">Accept Terms</label>
+        </section>
+      </main>
+      <footer>
+        <section>
+          <button type="reset" class="cls">clear</button>
+          <button type="submit" class="mit">Submit</button>
+        </section>
+      </footer>
+    </form>
+  </body>
 </html>

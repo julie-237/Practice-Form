@@ -1,62 +1,83 @@
 body {
-background-color: rgb(206, 238, 250);
-font-family: Bodoni Moda SC;
+  background-color: rgb(206, 238, 250);
+  font-family: Bodoni Moda SC;
 }
 
 header {
-    text-align: center;
-    font-size: 2rem;
-    font-weight: bold;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
 }
 h1 {
-    font-size: 1rem;
+  font-size: 1rem;
 }
 ul {
-    list-style: none;
-    padding: 0;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
 label {
-    margin: 5px 0;
+  margin: 5px 0;
+  display: block;
 }
 
 form {
-    width: 25rem;
-    margin: auto;
-    background-color:rgb(229, 246, 254) ;
-    padding: 1rem;
-    border-radius: 6px;
-    box-sizing:border-box ;
-    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
+  width: 25rem;
+  margin: auto;
+  background-color: rgb(229, 246, 254);
+  padding: 1rem;
+  border-radius: 6px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.5);
 }
-input, textarea, select {
-    width: 100%;
+input,
+textarea,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  font: inherit;
+  display: block;
+  border: 1px solid rgb(14, 67, 92);
+  border-radius: 5px;
+  resize: none;
 }
 
-input:focus, textarea:focus, select:focus {
-    background-color: cornflowerblue;
-    color: darkslateblue;
+input:focus,
+textarea:focus,
+select:focus {
+  background-color: rgb(205, 236, 247);
+  color: rgb(11, 78, 138);
 }
 .tick-mode {
-    
-   display: flexbox;
-    align-items: center; 
+  display: flex;
+}
+.tick-mode label {
+  margin-left: 0.5rem;
 }
 .tick-mode input {
-    
-    width: auto;
-    margin-right: 0.5rem;
+  width: auto;
 }
 footer {
-text-align: right;
+  text-align: right;
 }
 .mit {
-background-color: rgb(24, 24, 103);
-color: white;
+  background-color: rgb(11, 78, 138);
+  color: white;
 }
-.mit :hover {
-    background-color: rgb(18, 18, 19);
+.cls {
+  background-color: transparent;
+  color: rgb(24, 24, 103);
+}
+button {
+  font: inherit;
+  border: 1px solid rgb(11, 78, 138);
+  border-radius: 5px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+.mit:hover {
+  background-color: rgb(2, 44, 81);
 }
 
-.cls :hover {
-    background-color: rgb(102, 101, 101);{}
+.cls:hover {
+  background-color: rgb(205, 236, 247);
 }
